@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 @RestController
-@RequestMapping("/v1/api")
+@RequestMapping("/api")
 public class AddressBook {
 
     // to store data
