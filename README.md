@@ -37,6 +37,24 @@ Demo project to understand how Swagger is used to create documentation of variou
 
  - now access the endpoint `http://localhost:8080/swagger-ui.html` from your browser
 
-## Demo of Swagger dashboard
+### Demo of Swagger dashboard
 
 ![swagger dahboard](images/swagger-ui-dashboard.jpg)
+
+### Customizing documentations
+
+- The way to customize swagger is by creating an instance of  an object called **Docket**. 
+Docket is an object that will contain all the customizable property that you intend the swagger to 
+pick up when generating documentation. 
+- The way you publish is by making **Docket as Spring Bean**.
+- Docket instance is manipulated by following the **Builder Pattern.**
+- When you get the Docket instance, you're going to call the **select()** method on it to get the Docket builder object.
+- This is the builder object of a class called **ApiSelectorBuilder.**
+- Now this builder has methods that let you customize how you want to swagger to behave. 
+- You can call methods on it get everything you need and at the end you call **build()** method to get the prepared Docket object.
+
+- You can do more customizations using @ApiOperation annotations on various endpoints methods in controller.
+
+### Demo after customization
+
+![swagger dashboard](images/swagger-customized.jpg)
