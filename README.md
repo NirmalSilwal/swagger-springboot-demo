@@ -39,4 +39,4 @@ Demo project to understand how Swagger is used to create documentation of variou
 
 ## Demo of Swagger dashboard
 
-![swagger dahboard]("images/swagger-ui-dashboard.jpg")
+![swagger dahboard](images/swagger-ui-dashboard.jpg)
