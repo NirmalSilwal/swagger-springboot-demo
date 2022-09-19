@@ -53,7 +53,9 @@ pick up when generating documentation.
 - Now this builder has methods that let you customize how you want to swagger to behave. 
 - You can call methods on it get everything you need and at the end you call **build()** method to get the prepared Docket object.
 
-- You can do more customizations using @ApiOperation annotations on various endpoints methods in controller.
+- You can do more customizations using **@ApiOperation** annotations on various endpoints methods in controller.
+- You can also use **@ApiParam** annotation to tell more information about **@PathVariable**
+- use **@ApiModel, @ApiModelProperty** annotations in models of your application to tell more about your models to the user.
 
 ### Demo after customization
 
